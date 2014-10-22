@@ -42,6 +42,8 @@ class ViewController: UIViewController {
         
         enterMessageTextField.text = ""
         enterMessageTextField.resignFirstResponder() //remove keyboard
+        
+        // adding a comment here to test comits
             
         maiButton.setTitle("Sent", forState: UIControlState.Normal)
             
