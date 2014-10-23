@@ -30,6 +30,14 @@
                                     <rect key="frame" x="16" y="200" width="240" height="30"/>
                                 </variation>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hoc-LJ-Y51">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="244" width="240" height="30"/>
+                                </variation>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xt8-Y3-6aC">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.58179292699999996" blue="0.13961023450000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -53,32 +61,35 @@
                                     <rect key="frame" x="8" y="335" width="245" height="112"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hoc-LJ-Y51">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Kz-cz-rRw">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="244" width="240" height="30"/>
+                                    <rect key="frame" x="124" y="171" width="132" height="21"/>
                                 </variation>
-                            </textField>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="J6h-Oo-rQV"/>
                                 <exclude reference="3jX-XV-25i"/>
+                                <exclude reference="hoc-LJ-Y51"/>
                                 <exclude reference="xt8-Y3-6aC"/>
                                 <exclude reference="ELg-iD-59n"/>
-                                <exclude reference="hoc-LJ-Y51"/>
+                                <exclude reference="2Kz-cz-rRw"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="J6h-Oo-rQV"/>
                                 <include reference="3jX-XV-25i"/>
+                                <include reference="hoc-LJ-Y51"/>
                                 <include reference="xt8-Y3-6aC"/>
                                 <include reference="ELg-iD-59n"/>
-                                <include reference="hoc-LJ-Y51"/>
+                                <include reference="2Kz-cz-rRw"/>
                             </mask>
                         </variation>
                     </view>
@@ -87,6 +98,7 @@
                         <outlet property="enterNameTextField" destination="3jX-XV-25i" id="fS0-2Z-df3"/>
                         <outlet property="maiButton" destination="xt8-Y3-6aC" id="x4d-MD-3R2"/>
                         <outlet property="messageLabel" destination="ELg-iD-59n" id="5hL-yS-uPH"/>
+                        <outlet property="nameLabel" destination="2Kz-cz-rRw" id="DHC-ep-wrO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

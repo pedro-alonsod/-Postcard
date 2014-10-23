@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var maiButton: UIButton!
     
+    @IBOutlet weak var nameLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -38,11 +40,19 @@ class ViewController: UIViewController {
         messageLabel.textColor = UIColor.yellowColor()
         messageLabel.text = enterMessageTextField.text
         
+        nameLabel.hidden = false
+        nameLabel.text = enterNameTextField.text
+        nameLabel.textColor = UIColor.greenColor()
+            
+            
         labelSwitch = true
         
         enterMessageTextField.text = ""
         enterMessageTextField.resignFirstResponder() //remove keyboard
         
+        enterNameTextField.text = ""
+        enterNameTextField.resignFirstResponder()
+            
         // adding a comment here to test comits
             
         maiButton.setTitle("Sent", forState: UIControlState.Normal)
